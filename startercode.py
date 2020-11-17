@@ -46,7 +46,7 @@ plt.show()
 
 
 # for outputting predictions of model
-df = pd.read_csv("test.csv")
+df = pd.read_csv("test.csv", header=None)
 x = df.iloc[:,0]
 y = df.iloc[:,1]
 output = packTuple(x,y)
